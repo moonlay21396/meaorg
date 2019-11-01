@@ -188,7 +188,7 @@
                 if(confirm('Are you sure You want to delete!')==true){
                     $.ajax({
                         type: "get",
-                        url: 'gallery/delete/'+id,
+                        url: './gallery/delete/'+id,
 
                         cache: false,
                         success: function(data){

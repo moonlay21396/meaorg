@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\CustomClass\SubcategoryData;
 use App\MainCategory;
 use App\SubCategory;
+use App\Company;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -119,6 +120,21 @@ class CategoryController extends Controller
             unlink($image_path);
         }
         $data->delete();
+
+        $cate_company = Company::where('sub_category_id',$id)->get();
+        foreach ($cate_company as $data_com) {
+            $image_paths = public_path() . '/upload/photo/' . $data->logo;
+            if (file_exists($image_paths)) {
+                unlink($image_paths);
+            }
+            $data_com->delete();
+        }
+        return response()->json(true);
+    }
+
+    public function destroy_subcompany($id){
+        $sub_company = Company::where('sub_category_id',$id)->get();
+        return response()->json(count($sub_company));
     }
 
 }

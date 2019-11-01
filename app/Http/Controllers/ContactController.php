@@ -47,42 +47,53 @@ class ContactController extends Controller
     }
     public function update_info(Request $request){
          $id = $request->get('id');
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $image_name = uniqid() . '_' . $image->getClientOriginalName();
-            $image->move(public_path('/user/images/'), $image_name);
-            $info = WebSiteInfo::find($id);
-            $image_path = public_path() . '/user/images/' . $info->sign_photo;
-            if (file_exists($image_path)) {
-                unlink($image_path);
-            }
-            WebSiteInfo::findOrFail($id)->update([
-                'sign_photo' => $image_name,
+        // if ($request->hasFile('image')) {
+        //     $image = $request->file('image');
+        //     $image_name = uniqid() . '_' . $image->getClientOriginalName();
+        //     $image->move(public_path('/user/images/'), $image_name);
+        //     $info = WebSiteInfo::find($id);
+        //     $image_path = public_path() . '/user/images/' . $info->sign_photo;
+        //     if (file_exists($image_path)) {
+        //         unlink($image_path);
+        //     }
+        //     WebSiteInfo::findOrFail($id)->update([
+        //         'sign_photo' => $image_name,
+        //         'website_name' => $request->get('website_name'),
+        //         'about' => $request->get('about'),
+        //         'history' => $request->get('history'),
+        //         'vision' => $request->get('vision'),
+        //         'mission' => $request->get('mission'),
+        //         'sign_name' => $request->get('sign_name'),
+        //         'sign_position' => $request->get('sign_position'),
+        //         'email' => $request->get('email'),
+        //         'phone' => $request->get('phone'),
+        //         'address' => $request->get('address')
+        //     ]);
+        // } else {
+        //     WebSiteInfo::findOrFail($id)->update([
+        //        'website_name' => $request->get('website_name'),
+        //         'about' => $request->get('about'),
+        //         'history' => $request->get('history'),
+        //         'vision' => $request->get('vision'),
+        //         'mission' => $request->get('mission'),
+        //         'sign_name' => $request->get('sign_name'),
+        //         'sign_position' => $request->get('sign_position'),
+        //         'email' => $request->get('email'),
+        //         'phone' => $request->get('phone'),
+        //         'address' => $request->get('address')
+        //     ]);
+        // }
+         WebSiteInfo::findOrFail($id)->update([
                 'website_name' => $request->get('website_name'),
                 'about' => $request->get('about'),
                 'history' => $request->get('history'),
                 'vision' => $request->get('vision'),
                 'mission' => $request->get('mission'),
-                'sign_name' => $request->get('sign_name'),
-                'sign_position' => $request->get('sign_position'),
                 'email' => $request->get('email'),
                 'phone' => $request->get('phone'),
                 'address' => $request->get('address')
             ]);
-        } else {
-            WebSiteInfo::findOrFail($id)->update([
-               'website_name' => $request->get('website_name'),
-                'about' => $request->get('about'),
-                'history' => $request->get('history'),
-                'vision' => $request->get('vision'),
-                'mission' => $request->get('mission'),
-                'sign_name' => $request->get('sign_name'),
-                'sign_position' => $request->get('sign_position'),
-                'email' => $request->get('email'),
-                'phone' => $request->get('phone'),
-                'address' => $request->get('address')
-            ]);
-        }
-        return redirect('admin/site_info');
+            
+        // return redirect('admin/site_info');
     }
 }

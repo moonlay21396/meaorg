@@ -9,6 +9,7 @@ use App\CustomClass\MemberData;
 use App\User;
 use App\WebSiteInfo;
 use Auth;
+use App\Company;
 
 class MemberController extends Controller
 {
@@ -54,6 +55,7 @@ class MemberController extends Controller
                 'name' => $request->get('name'),
                 'type' => $request->get('member_type'),
                 'phone' => $request->get('phone'),
+                'position' => $request->get('position'),
                 'address' => $request->get('address'),
                 'education' => $request->get('education'),
                 'detail' => $request->get('detail'),
@@ -119,6 +121,7 @@ class MemberController extends Controller
                 'name' => $request->get('name'),
                 'type' => $request->get('member_type'),
                 'phone' => $request->get('phone'),
+                'position' => $request->get('position'),
                 'address' => $request->get('address'),
                 'education' => $request->get('education'),
                 'detail' => $request->get('detail'),
@@ -131,6 +134,7 @@ class MemberController extends Controller
                 'name' => $request->get('name'),
                 'type' => $request->get('member_type'),
                 'phone' => $request->get('phone'),
+                'position' => $request->get('position'),
                 'address' => $request->get('address'),
                 'education' => $request->get('education'),
                 'detail' => $request->get('detail'),
@@ -146,14 +150,34 @@ class MemberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy_member($id)
     {
-        $member_id = Member::find($id);
+        $member_id = Member::findOrFail($id);
+        $image_path = public_path() . '/upload/member/' . $member_id->photo;
+        if (file_exists($image_path)) {
+            unlink($image_path);
+        }
         $member_id->delete();
+
         $user_id = User::where('member_id', $id)->first();
         $user_id->delete();
 
+        $member_company = Company::where('member_id',$id)->get();
+        foreach ($member_company as $data) {
+            $image_paths = public_path() . '/upload/photo/' . $data->logo;
+            if (file_exists($image_paths)) {
+                unlink($image_paths);
+            }
+            $data->delete();
+        }
+        return response()->json(true);
     }
+
+    public function destroy_membercompany($id){
+        $mem_company = Company::where('member_id',$id)->get();
+        return response()->json(count($mem_company));
+    }
+
     public function get_all_member(){
         $members = Member::orderBy('id', 'desc')->get();
         $arr = [];

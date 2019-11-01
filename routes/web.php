@@ -17,7 +17,7 @@ Route::get('test','Controller@test');
 // For admin
 Auth::routes();
 Route::get('/admin', 'HomeController@index');
-Route::get('logout', 'Auth\LoginController@logout');
+Route::get('logout', 'Auth\LoginController@logout')->middleware('auth');
 
 
 Route::group(['middleware' => ['auth','admin']], function () {
@@ -28,10 +28,11 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::get('admin/member','MemberController@index');
     Route::post('admin/insert_member', 'MemberController@store');
     Route::get('admin/get_all_member', 'MemberController@get_all_member');
-    Route::get('/delete_member/{id}', 'MemberController@destroy');
     Route::get('admin/member_detail/{id}', 'MemberController@member_detail');
     Route::get('/edit/member/{id}', 'MemberController@edit');
     Route::post('/update_member', 'MemberController@update_member');
+    Route::delete('admin/delete_member/{id}', 'MemberController@destroy_member');
+    Route::get('admin/delete/mem_company/{id}', 'MemberController@destroy_membercompany');
 
     // main category
     Route::get('admin/main_category','CategoryController@show_main');
@@ -47,7 +48,9 @@ Route::group(['middleware' => ['auth','admin']], function () {
     Route::get('admin/get_all_sub_category', 'CategoryController@get_all_sub_category');
     Route::post('/edit/sub_category/{id}','CategoryController@edit_sub');
     Route::post('/update/sub_category','CategoryController@update_sub');
-    Route::get('/delete/sub_category/{id}', 'CategoryController@destroy_sub');
+    Route::delete('/admin/delete/sub_category/{id}', 'CategoryController@destroy_sub');
+    Route::get('/admin/delete/sub_company/{id}', 'CategoryController@destroy_subcompany');
+
 
     //    blog
     Route::get('/admin/blog','BlogController@index');
@@ -87,8 +90,15 @@ Route::group(['middleware' => ['auth','admin']], function () {
 
     Route::get('admin/gallery/','Controller@show_view');
     Route::post('admin/gallery/insert','Controller@insert_gallery');
-    Route::get('admin/gallery/delete/{$id}','Controller@delete_gallery');
+    Route::get('admin/gallery/delete/{id}','Controller@delete_gallery');
     Route::get('admin/gallery/all','Controller@all_admin_gallery');
+
+    // Banner
+    Route::get('admin/banner','BannerController@index');
+    Route::post('admin/insert_banner', 'BannerController@insert_banner');
+    Route::get('admin/get_all_banner', 'BannerController@get_all_banner');
+    Route::get('admin/delete_banner/{id}', 'BannerController@delete_banner');
+
 });
 
 
@@ -139,3 +149,4 @@ Route::post('/search_blog', 'UIController@search_blog');
 // Route::get('/home', 'HomeController@index')->name('home');
 //contact
 Route::post('/contact','Controller@store');
+

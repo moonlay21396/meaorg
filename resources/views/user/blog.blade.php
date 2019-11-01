@@ -128,7 +128,7 @@
                             @foreach($latest_news as $item)
                                 <div class="single-recent-post d-flex flex-row">
                                     <div class="recent-thumb">
-                                        <a href="{{url('/blog/'.$item['id'])}}"><img class="img-fluid" src="{{$item['photo_url']}}" alt="" style="width:100px;height:80px" class="img-responsive"></a>
+                                        <a href="{{url('/blog/'.$item['id'])}}"><img class="" src="{{$item['photo_url']}}" alt="" style="width:100px!important;" height="100px;" class="img-responsive"></a>
                                     </div>
                                     <div class="recent-details">
                                         <a href="{{url('/blog/'.$item['id'])}}">
@@ -150,7 +150,7 @@
                     @foreach($ads as $ads_photos)
                         <div class="row main-content">
                             <div class="col-lg-12">
-                                <a href="{{$ads_photos['link']}}">
+                                <a href="{{$ads_photos['link']}}" target="_blank">
                                     <img src="{{$ads_photos['photo_url']}}" alt="" width="100%" height="200px">
                                 </a>
                             </div>

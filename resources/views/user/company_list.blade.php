@@ -47,6 +47,9 @@
     .jobs-area{
         margin-top: -130px;
     }
+    .search-area{
+        margin-top: -110px;
+    }
 
 
 }
@@ -136,7 +139,7 @@
                     @foreach($ads as $ads_photos)
                     <div class="row main-content">
                          <div class="col-lg-12">
-                             <a href="{{$ads_photos['link']}}">
+                             <a href="{{$ads_photos['link']}}" target="_blank">
                               <img src="{{$ads_photos['photo_url']}}" alt="" width="100%" height="200px">
                              </a>
                          </div>
@@ -152,3 +155,64 @@
         </div>
     </section>
 @endsection
+
+@section('js')
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        set_sub_category=function(){
+            var main=document.getElementById('main_id');
+            var main_id=main.value;
+            $.ajax({
+                type: 'get',
+                url: '{{url("get_sub_category")}}'+'/'+main_id,
+                cache:false,
+                contentType: false,
+                processData: false,
+                success: function(result) {
+                    console.log(result);
+                    let str="";
+                    for (let item of result) {
+                        str += "<option>" + item.name + "</option>";
+                    }
+                    let sub=document.querySelector("#sub_id");
+                    sub.innerHTML+=str;
+
+                    console.log(sub.innerHTML);
+
+                },
+            });
+        }
+        search_data=function () {
+            event.preventDefault();
+            var sub=document.getElementById('sub_id');
+            var sub_id=sub.value;
+            var key=document.getElementById('keyword');
+            var keyword=key.value;
+
+            var link='{{url('search/company')}}'+'/'+sub_id+'/'+keyword;
+            console.log(link);
+            // alert(link);
+           window.open(link,'_self');
+        }
+
+//
+//        function hello(){
+//            let result=['hello','hi','how','are','you'];
+//            let str="";
+//            for (let item of result) {
+//                str += "<option>" + item + "</option>";
+//            }
+//            let sub=document.querySelector("#sub_id");
+//            sub.innerHTML+=str;
+//            console.log(sub.innerHTML);
+//
+//        }
+
+    </script>
+    @endsection
+

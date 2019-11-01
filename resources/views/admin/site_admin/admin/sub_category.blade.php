@@ -388,21 +388,32 @@
             });
 
             delete_data=function(id){
-                if(confirm('Are you sure You want to delete!')==true){
-                    $.ajax({
-                        type: "get",
-                        url: "../delete/sub_category/"+id,
-
-                        cache: false,
-                        success: function(data){
-                            toastr.success('Delete successful');
+            var delete_url="{{url('/admin/delete/sub_category/')}}/"+id;
+            var url="{{url('admin/delete/sub_company')}}/"+id;
+                $.ajax({
+                    url : url,
+                    type : "get",
+                    dataType : "json"
+                    }).done(function(response){
+                        if(confirm(`This category has ${response} company. Are you sure you want to delete?`)){
+                            $.ajax({
+                            url : delete_url,
+                            type : "post",
+                            data : {'_method' : 'delete'},
+                            dataType : "json"
+                            }).done(function(response){
+                            toastr.success("Delete Data Successful!");
                             load();
+                            
+                            }).fail(function(error){
+                            console.log(error);
+                            });
                         }
+
+                    }).fail(function(error){
+                    console.log(error);
                     });
-                }else{
-                    return false;
-                }
-            }
+                 }
         });
     </script>
 @endsection

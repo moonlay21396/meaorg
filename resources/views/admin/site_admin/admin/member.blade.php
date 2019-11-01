@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <style>
+      
         .imagePreview {
             width: 100%;
             height: 150px;
@@ -108,6 +109,12 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
+                                        <label for="position">Position</label>
+                                         <input type="text" name="position" class="form-control" id="position" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
                                         <label for="type"><b>Type</b></label><br>
                                        <select name="member_type" id="type" class="form-control" required>
                                             <option value="">-- Select Member Type--</option>
@@ -199,7 +206,8 @@
                             {{csrf_field()}}
                             <input type="hidden" name="id" id="id_edit">
                               <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">
                                     <div class="form-group">
                                         <img src="{{asset('images/default.jpg')}}" id="imgs" class="imagePreview img-thumbnail">
                                         <label class="btn btn-primary upload_btn">
@@ -207,6 +215,7 @@
                                     </label>
                                     </div>
                                 </div>
+                                <div class="col-md-2"></div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="update_name">Name</label>
@@ -227,6 +236,12 @@
                                     <div class="form-group">
                                         <label for="update_phone">Phone</label>
                                          <input type="phone" name="phone" class="form-control" id="update_phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="update_position">Position</label>
+                                         <input type="text" name="position" class="form-control" id="update_position" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -350,8 +365,8 @@
                     processData: false,
                     contentType: false,
                     success: function(data){
-                        // alert('itwork');
-                        // console.log(data);
+                        alert('itwork');
+                        console.log(data);
                         $('#modalBox').modal('hide');
                         toastr.success('Create member account successful');
                         load();
@@ -378,6 +393,7 @@
                         $('#update_name').val(member['name']);
                         $('#update_type').val(member['type']);
                         $('#update_phone').val(member['phone']);
+                        $('#update_position').val(member['position']);
                         $('#update_address').val(member['address']);
                         $('#update_education').val(member['education']);
                         $('#update_detail').val(member['detail']);
@@ -411,22 +427,50 @@
                 return false;
             });
 
-            delete_data=function(id){
-                if(confirm('Are you sure You want to delete!')==true){
-                    $.ajax({
-                        type: "get",
-                        url: "../delete_member/"+id,
+            // delete_data=function(id){
+            //     if(confirm('Are you sure You want to delete!')==true){
+            //         $.ajax({
+            //             type: "get",
+            //             url: "../delete_member/"+id,
 
-                        cache: false,
-                        success: function(data){
-                            toastr.success('Delete Account Data successful');
+            //             cache: false,
+            //             success: function(data){
+            //                 toastr.success('Delete Account Data successful');
+            //                 load();
+            //             }
+            //         });
+            //     }else{
+            //         return false;
+            //     }
+            // }
+
+            delete_data=function(id){
+            var delete_url="{{url('admin/delete_member')}}/"+id;
+            var url="{{url('admin/delete/mem_company')}}/"+id;
+                $.ajax({
+                    url : url,
+                    type : "get",
+                    dataType : "json"
+                    }).done(function(response){
+                        if(confirm(`This member has ${response} company. Are you sure you want to delete?`)){
+                            $.ajax({
+                            url : delete_url,
+                            type : "post",
+                            data : {'_method' : 'delete'},
+                            dataType : "json"
+                            }).done(function(response){
+                            toastr.success("Delete Data Successful!");
                             load();
+                            
+                            }).fail(function(error){
+                            console.log(error);
+                            });
                         }
+
+                    }).fail(function(error){
+                    console.log(error);
                     });
-                }else{
-                    return false;
-                }
-            }
+                 }
         });
     </script>
 @endsection

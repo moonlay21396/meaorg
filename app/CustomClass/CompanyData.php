@@ -64,9 +64,9 @@ class CompanyData
     }
 
     public static function getCustomCompany($datas){
-        $datas=self::sort_companies_by_companytype($datas);
+        $datas_company=self::sort_companies_by_companytype($datas);
         $arr=[];
-        foreach ($datas as $item){
+        foreach ($datas_company as $item){
             $obj=new CompanyData($item->id);
             array_push($arr,$obj->getCompanyData());
         }

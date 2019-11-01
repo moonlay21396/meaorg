@@ -73,82 +73,94 @@
         </div>
     </div>
 
-
 <style>
-.gallery-container p.page-description {
+    .gallery-block{
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
     text-align: center;
-    max-width: 800px;
-    margin: 25px auto;
-    color: #888;
-    font-size: 18px;
 }
 
-.tz-gallery {
-    padding: 40px;
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
-.tz-gallery .lightbox img {
-    width: 100%;
-    margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+.gallery-block.cards-gallery h6 {
+  font-size: 17px;
+  font-weight: bold; 
 }
 
-
-.tz-gallery .lightbox img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+.gallery-block.cards-gallery .card{
+  transition: 0.4s ease; 
 }
 
-.tz-gallery img {
-    border-radius: 4px;
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
 }
 
-.baguetteBox-button {
-    background-color: transparent !important;
+.gallery-block.cards-gallery .card-body {
+  text-align: center; 
 }
 
+.gallery-block.cards-gallery .card-body p {
+  font-size: 15px; 
+}
 
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+.gallery-block.cards-gallery a {
+  color: #212529; 
+}
 
-    .container.gallery-container {
-        border-radius: 0;
-    }
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none; 
+}
+
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
 }
 </style>
-<div class="container gallery-container">
 
- 
-    <div class="tz-gallery">
-
-        <div class="row">
-            @foreach($gallery as $item)
-            <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="{{$item}}">
-                    <img src="{{$item}}" alt="Park" class="img-responsive" width="300px;" height="200px;">
-                </a>
-                <!--<div class="team-footer text-center" style="margin-top: -20px; margin-bottom: 50px">-->
-                <!--            <h3>I am title</h3>-->
-                <!--            <h5>21-10-2019</h5>-->
-                <!--</div>-->
-            </div>
-        
-                @endforeach
-        {{$paginate->links()}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+ <section class="gallery-block cards-gallery">
+        <div class="container">
+            <div class="heading">
             
+            </div>
+            <div class="row">
+                @foreach($admin_gallery as $admin_gallerys)
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="{{$admin_gallerys->photo_url}}">
+                            <img src="{{$admin_gallerys->photo_url}}" alt="Card Image" class="card-img-top" style="width:350px;height:220px;">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">{{$admin_gallerys->title}}</a></h6>
+                            {{-- <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p> --}}
+                        </div>
+                    </div>
+                </div>
+                 @endforeach
+            </div>
+            {{$paginate->links()}}
         </div>
-
-    </div>
-
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+    </script>
     
     
 @endsection

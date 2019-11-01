@@ -3,8 +3,7 @@
 @section('css')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10…/…/jquery.dataTables.min.css">
 
-    <meta name="csrf-token" conte
-          nt="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <style>
         .imagePreview {
@@ -62,22 +61,23 @@
                         </div>
 
 
-                        <form action="{{url('admin/update_info')}}" method="post" enctype="multipart/form-data">
+                        <form id="update_data" method="post" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <input type="hidden" name="id" id="id" value="{{$website_info->id}}">
                             <div class="col-md-10 pt-2 pb-2 mx-auto card" style="margin-top:30px;">
-                                <div class="row" style="display: none;">
+                                {{-- <div class="row" style="display: none;">
                                     <div class="col-md-4">
                                         <img src="{{asset('user/images/'.$website_info->sign_photo)}}" class="imagePreview" id="imgs" style="width: 100%;height: 100px;">
                                         <label class="btn btn-md btn-primary container-fluid rounded-0 m-0" for="edit_upload_photo">Upload</label><br><br>
                                         <input type="file" style="display:none;" id="edit_upload_photo" name="image" class="form-control package_photo" onchange="displaySelectedPhoto('edit_upload_photo','imgs')">
                                     </div>
 
-                                </div> <br>
+                                </div> <br> --}}
                                 <div class="form-group">
                                     <br>
                                     <label style="color:black;" for="update_webname" class="col-form-label"> Website Name:</label>
-                                    <input type="text" class="form-control" id="update_webname" name="website_name" value="{{$website_info->website_name}}">
+                                    {{-- <input type="text" class="form-control" id="update_webname" name="website_name" value="{{$website_info->website_name}}"> --}}
+                                    <textarea class="form-control" id="update_webname" name="website_name" rows="2">{{$website_info->website_name}}</textarea>
                                     <br>
                                 </div>
 
@@ -105,24 +105,28 @@
                                     <textarea class="form-control" rows="4" id="update_mission" name="mission">{{$website_info->mission}}</textarea><br>
                                 </div>
 
-                                <div class="form-group" style="display: none;">
+                                {{-- <div class="form-group" style="display: none;">
                                     <label style="color:black;" for="update_name" class="col-form-label">Name:</label> <br>
-                                    <input type="text" class="form-control" id="update_name" name="sign_name" value="{{$website_info->sign_name}}"><br>
-                                </div>
 
-                                <div class="form-group" style="display: none;">
+                                    <textarea class="form-control" rows="2" id="update_name" name="sign_name" >{{$website_info->sign_name}}</textarea><br>
+                                </div> --}}
+
+                                {{-- <div class="form-group" style="display: none;">
                                     <label style="color:black;" for="update_position" class="col-form-label">Position:</label> <br>
-                                    <input type="text" class="form-control" id="update_position" name="sign_position" value="{{$website_info->sign_position}}">
-                                </div>
+
+                                    <textarea class="form-control" rows="2" id="update_position" name="sign_position">{{$website_info->sign_position}}</textarea>
+                                </div> --}}
 
                                 <div class="form-group">
                                     <label style="color:black;" for="update_phone" class="col-form-label">Phone No:</label><br>
-                                    <input type="tel" class="form-control" id="update_phone" name="phone" value="{{$website_info->phone}}">
+                                    {{-- <input type="tel" class="form-control" id="update_phone" name="phone" value="{{$website_info->phone}}"> --}}
+                                    <textarea class="form-control" rows="2" id="update_phone" name="phone">{{$website_info->phone}}</textarea>
                                 </div>
 
                                 <div class="form-group">
                                     <label style="color:black;" for="update_email" class="col-form-label">Email:</label><br>
-                                    <input type="email" class="form-control" id="update_email" name="email" value="{{$website_info->email}}">
+                                    {{-- <input type="email" class="form-control" id="update_email" name="email" value="{{$website_info->email}}"> --}}
+                                    <textarea class="form-control" rows="2" id="update_email" name="email">{{$website_info->email}}</textarea>
                                 </div>
 
                                 <div class="form-group">
@@ -131,7 +135,7 @@
                                 </div>
 
                                 <br>
-                                <input type="submit" name="submit" class="rounded-0 btn btn-md btn-success" value="Change">
+                                <button type="submit" name="submit" class="rounded-0 btn btn-md btn-success">Change</button>
                             </div>
                         </form>
                     </div>
@@ -142,12 +146,42 @@
 @endsection
 
 @section('js')
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
         $(document).ready(function() {
             $('#update_about').summernote();
             $('#update_history').summernote();
             $('#update_vision').summernote();
             $('#update_mission').summernote();
+
+            $('#update_data').on('submit',function (e)
+            {
+                e.preventDefault();
+                var updateData = new FormData(this);
+                $.ajax
+                ({
+                    type: 'POST',
+                    url: "{{url('admin/update_info')}}",
+                    data:updateData,
+                    cache:false,
+                    processData: false,
+                    contentType: false,
+                    success: function(data){
+                        console.log(data);
+                        // alert('it work');
+                        // $('#edit_modalBox').modal('hide');
+                        toastr.success('Update data successful');
+                        window.location.load();
+                    }
+                });
+                return false;
+            });
         });
     </script>
 @endsection

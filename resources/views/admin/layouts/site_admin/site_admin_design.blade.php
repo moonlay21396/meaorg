@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('/user/images/monlogo.jpg')}}">
-    <link rel="icon" type="image/png" href="{{asset('/user/images/monlogo.jpg')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('/user/images/logo-mea-admin.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('/user/images/logo-mea-admin.png')}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
         @yield('title')
@@ -22,10 +22,16 @@
     <!-- summer note -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
     <!-- datepicker -->
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu' />
 
 
     @yield('css')
 </head>
+<style>
+    *,h1,h2,h3,h4,h5,h6,p,span{
+        
+        font-family: Pyidaungsu;
+</style>
 
 <body class="">
 @include('admin.layouts.site_admin.site_admin_sidebar')

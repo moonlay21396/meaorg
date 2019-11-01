@@ -11,15 +11,19 @@
     <title>@yield('title')</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{asset('/user/images/monlogo.jpg')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('/user/images/logo-mea-admin.png')}}" type="image/x-icon">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{asset('user/css/animate-3.7.0.css')}}">
     {{--<link rel="stylesheet" href="{{asset('user/css/font-awesome-4.7.0.min.cs')}}">--}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="{{asset('user/fonts/flat-icon/flaticon.css')}}">
     {{--<link rel="stylesheet" href="{{asset('user/css/bootstrap-4.1.3.min.css')}}">--}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu' />
 
     <link rel="stylesheet" href="{{asset('user/css/owl-carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('user/css/nice-select.css')}}">

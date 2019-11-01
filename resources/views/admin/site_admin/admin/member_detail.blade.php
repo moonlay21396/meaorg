@@ -57,6 +57,10 @@
                                         <td>{{$member_detail['phone']}}</td>
                                       </tr>
                                       <tr>
+                                        <td><b>Position</b></td>
+                                        <td>{{$member_detail['position']}}</td>
+                                      </tr>
+                                      <tr>
                                         <td><b>Address</b></td>
                                         <td>{{$member_detail['address']}}</td>
                                       </tr>

@@ -21,6 +21,7 @@
         @media(max-width: 991px) and (min-width: 676px){
           .fixed-top .custom-navbar{
             margin-top: 50px;
+    
           }  
         }
         @media(max-width: 676px) and (min-width: 575px){
@@ -34,7 +35,10 @@
         @media(max-width:991px){
             .logo-area a img{
                 width:250px;
-            }   
+            } 
+            .custom-navbar{
+                 top:-48px!important;
+            }  
         }
         @media(max-width:350px){
             .logo-area a img{
@@ -49,7 +53,7 @@
                 <div class="col-md-3 col-sm-6 col-lg-4">
 
                     <div class="logo-area" style="padding-top: 0px!important;">
-                        <a href="{{url('/')}}"><img src="{{asset('user/images/logo-mea.png')}}" width="300px"></a>
+                        <a href="{{url('/')}}"><img src="{{asset('user/images/logo-mon.jpg')}}" width="300px"></a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-6 col-lg-8">

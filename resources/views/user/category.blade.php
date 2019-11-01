@@ -74,9 +74,9 @@
                 @foreach($sub_category as $item)
                     <div class="col-lg-3 col-md-6">
                         <div class="single-category text-center mb-4">
-                            <img src="{{$item['logo_url']}}" alt="category">
+                            <img src="{{$item['logo_url']}}" alt="category" style="width:50px;height:50px;">
                             <h4>{{$item['name']}}</h4>
-                            <h5>30 Companies</h5>
+                            <h5>{{$item['total_company']}} Companies</h5>
                             <a href="{{url('category/company/'.$item['id'])}}" class="more">More Details >>></a>
                         </div>
                     </div>

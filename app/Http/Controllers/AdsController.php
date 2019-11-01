@@ -171,8 +171,8 @@ class AdsController extends Controller
         return json_encode($arr);
     }
 
-    static function ads_by_page($page_id){
-        $ads_webpage=Ads_webpage::where('webpage_id',$page_id)->get();
+    static function ads_by_page($page_id,$limit){
+        $ads_webpage=Ads_webpage::where('webpage_id',$page_id)->get()->random($limit);
         $ads_arr=[];
         foreach ($ads_webpage as $data){
             $ads=Ads::findOrFail($data->ads_id);

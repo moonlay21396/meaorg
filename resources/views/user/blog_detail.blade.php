@@ -4,6 +4,10 @@
 @endsection
 @section('css')
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5da47a4026f4f800126d341a&product=inline-share-buttons" async="async"></script>
+
+    
+   
+}
 @endsection
 @section('content')
         <style>
@@ -53,6 +57,10 @@
    
     
    
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+        font-family: Pyidaungsu!important;
 }
 
 </style>
@@ -252,7 +260,7 @@
                                             @foreach($latest_news as $item)
                                             <div class="single-recent-post d-flex flex-row">
                                                 <div class="recent-thumb">
-                                                    <a href="{{url('/blog/'.$item['id'])}}"><img class="img-fluid" src="{{$item['photo_url']}}" alt="" style="width:100px;height:80px" class="img-responsive"></a>
+                                                    <a href="{{url('/blog/'.$item['id'])}}"><img class="" src="{{$item['photo_url']}}" alt="" style="width:100px!important;height:100px" class="img-responsive"></a>
                                                 </div>
                                                 <div class="recent-details">
                                                     <a href="{{url('/blog/'.$item['id'])}}">

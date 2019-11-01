@@ -18,25 +18,27 @@ use App\CustomClass\MemberData;
 use App\CustomClass\SubcategoryData;
 use App\CustomClass\WebSiteInfoData;
 use App\SubCategory;
+use App\Banner;
+use App\AdminGallery;
 use Illuminate\Http\Request;
 
 class UIController extends Controller
 {
     public function index(){
-        $sub_cat = SubCategory::all();
-        $ads=AdsController::ads_by_page(1);
-        $website_info=WebSiteInfoData::getWebSiteInfo();
-        $subcategory=SubCategory::paginate(8);
-        $subcategorydata=SubcategoryData::getCustomLimitSubCategory($subcategory);
-        $latest_news=BlogData::getLatestBlog(6);
-        $latest_event=EventData::getLatestEvent(6);
-        $company=Company::all();
-        $sortedcompany=CompanyData::getCustomCompany($company);
+         $sub_cat = SubCategory::all();
+         $ads=AdsController::ads_by_page(1,5);
+         $website_info=WebSiteInfoData::getWebSiteInfo();
+         $subcategory=SubCategory::paginate(8);
+         $subcategorydata=SubcategoryData::getCustomLimitSubCategory($subcategory);
+         $latest_news=BlogData::getLatestBlog(6);
+         $latest_event=EventData::getLatestEvent(6);
+         $company=Company::all();
+         $sortedcompany=CompanyData::getCustomCompany($company);
         $popular_company=array_slice($sortedcompany, 0, 10);
+        $banner = Banner::all();
 
        // $main_categories=MainCategory::all();
        // $default_sub_categories=SubCategory::where('main_id',$main_categories[0]['id'])->get();
-
 //        return $subcategorydata;
         return view('user.index')->with([
             'websiteinfo'=>$website_info,
@@ -48,18 +50,20 @@ class UIController extends Controller
             //'default_sub_categories'=>$default_sub_categories,
             'page'=>'home',
             'ads' => $ads,
-            'sub_cat' => $sub_cat
+            'sub_cat' => $sub_cat,
+            'banner' => $banner
         ]);
     }
     public function company_list(){
         $sub_category=SubCategory::all();
-        $ads=AdsController::ads_by_page(3);
+        $ads=AdsController::ads_by_page(3,5);
         $website_info=WebSiteInfoData::getWebSiteInfo();
         $latest_news=BlogData::getLatestBlog(4);
 
         $companies=Company::orderBy('id','desc')->paginate(10);
         $company_list=CompanyData::getCustomCompany($companies);
 
+        // return "ok";
         return view('user.company_list')->with([
             'websiteinfo'=>$website_info,
             'latest_news'=>$latest_news,
@@ -73,7 +77,7 @@ class UIController extends Controller
 
     public function search_company($sub_id,$keyword){
         $sub_category=SubCategory::all();
-        $ads = AdsController::ads_by_page(3);
+        $ads = AdsController::ads_by_page(3,5);
         $website_info=WebSiteInfoData::getWebSiteInfo();
         $latest_news=BlogData::getLatestBlog(4);
 
@@ -94,7 +98,7 @@ class UIController extends Controller
 
     public function category_company($id){
         $sub_category=SubCategory::all();
-        $ads=AdsController::ads_by_page(3);
+        $ads=AdsController::ads_by_page(3,5);
         $website_info=WebSiteInfoData::getWebSiteInfo();
         $latest_news=BlogData::getLatestBlog(4);
 
@@ -151,7 +155,7 @@ class UIController extends Controller
          $website_info=WebSiteInfoData::getWebSiteInfo();
          $latest_news=BlogData::getLatestBlog(4);
 
-         $subcategory=SubCategory::paginate(8);
+         $subcategory=SubCategory::paginate(12);
          $subcategorydata=SubcategoryData::getCustomLimitSubCategory($subcategory);
 
          return view('user.category')->with([
@@ -165,22 +169,24 @@ class UIController extends Controller
          ]);
     }
      public function gallery(){
+        $admin_gallery = AdminGallery::paginate(9);
+        $gallery_arr = [];
+        foreach ($admin_gallery as $item) {
+            $item['photo_url'] = Path::$domain_url . "upload/admin_gallery/" . $item['photo'];
+            array_push($gallery_arr, $item);
+        }
+        // return $gallery_arr;
          $website_info=WebSiteInfoData::getWebSiteInfo();
          $latest_news=BlogData::getLatestBlog(4);
 
-         $gallery=Gallery::paginate(15);
-
-         $arr=[];
-         foreach ($gallery as $item){
-             array_push($arr,Path::$domain_url.'upload/photo/'.$item['photo']);
-         }
-
+       
         return view('user.gallery')->with([
             'websiteinfo'=>$website_info,
             'latest_news'=>$latest_news,
-            'gallery'=>$arr,
+            // 'gallery'=>$arr,
             'page'=>'gallery',
-            'paginate'=>$gallery
+            'paginate'=>$admin_gallery,
+            'admin_gallery' => $gallery_arr
         ]);
     }
 
@@ -229,7 +235,7 @@ class UIController extends Controller
     {
 
         $search_event = $request->get('search_event');
-         $ads=AdsController::ads_by_page(6);
+         $ads=AdsController::ads_by_page(6,5);
          $website_info=WebSiteInfoData::getWebSiteInfo();
          $latest_news=BlogData::getLatestBlog(6);
          $latest_event=EventData::getLatestEvent(6);
@@ -250,7 +256,7 @@ class UIController extends Controller
 
 
     public function event(){
-         $ads=AdsController::ads_by_page(6);
+         $ads=AdsController::ads_by_page(6,10);
          $website_info=WebSiteInfoData::getWebSiteInfo();
          $latest_news=BlogData::getLatestBlog(4);
          $latest_event=EventData::getLatestEvent(6);
@@ -279,7 +285,7 @@ class UIController extends Controller
         $search_blog = $request->get('search_blog');
         $search_blogs = Blog::where('name', 'LIKE', "%$search_blog%")->paginate(10);
 
-        $ads=AdsController::ads_by_page(5);
+        $ads=AdsController::ads_by_page(5,5);
        $blog_data=BlogData::getCustomBlog($search_blogs);
         // return $search_blog_arr;
         return view('user.blog')->with([
@@ -293,7 +299,7 @@ class UIController extends Controller
     }
 
      public function blog(){
-        $ads=AdsController::ads_by_page(5);
+        $ads=AdsController::ads_by_page(5,10);
         $website_info=WebSiteInfoData::getWebSiteInfo();
         $latest_news=BlogData::getLatestBlog(6);
 
@@ -310,6 +316,15 @@ class UIController extends Controller
         ]);
     }
 
+    public function admin_gallery(){
+        $admin_gallery = AdminGallery::all();
+        $arr = [];
+        foreach ($admin_gallery as $item) {
+            $item['photo_url'] = Path::$domain_url . "upload/admin_gallery/" . $item['photo'];
+            array_push($arr, $item);
+        }
+        return $arr;
+    }
 
 
 }

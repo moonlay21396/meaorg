@@ -160,7 +160,7 @@
                     @foreach($ads as $ads_photos)
                         <div class="row main-content">
                             <div class="col-lg-12">
-                                <a href="{{$ads_photos['link']}}">
+                                <a href="{{$ads_photos['link']}}" target="_blank">
                                     <img src="{{$ads_photos['photo_url']}}" alt="" width="100%" height="200px">
                                 </a>
                             </div>
