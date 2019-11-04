@@ -10,6 +10,7 @@ use App\User;
 use App\WebSiteInfo;
 use Auth;
 use App\Company;
+use App\Gallery;
 
 class MemberController extends Controller
 {
@@ -164,11 +165,22 @@ class MemberController extends Controller
 
         $member_company = Company::where('member_id',$id)->get();
         foreach ($member_company as $data) {
-            $image_paths = public_path() . '/upload/photo/' . $data->logo;
+            $image_paths = public_path() . '/upload/logo/' . $data->logo;
             if (file_exists($image_paths)) {
                 unlink($image_paths);
             }
             $data->delete();
+        }
+
+        foreach($member_company as $company_gallery){
+            $gallery_data = Gallery::where('company_id', $company_gallery->id)->get();
+            foreach ($gallery_data as $item) {
+                $image_path1 = public_path() . '/upload/photo/' . $item['photo'];
+                if (file_exists($image_path1)) {
+                    unlink($image_path1);
+                }
+                $item->delete();
+            }
         }
         return response()->json(true);
     }

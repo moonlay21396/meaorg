@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2019 at 05:40 AM
+-- Generation Time: Nov 04, 2019 at 03:28 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -247,7 +247,8 @@ INSERT INTO `companies` (`id`, `member_id`, `logo`, `name`, `sub_category_id`, `
 (35, 61, '5db58352ba590_04.jpg', 'ရာမာန်', 19, 'rghtbossy@gmail.com', '09428725092', 'ကျိုက္ခမီလမ်း၊စျေးကြို - ဆန်တန်းရပ်၊ မော်လမြိုင်မြို့', 'www.greenhackersinstitute.com', 'http://www.facebook.com', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'ads', '2019-10-23', '2019-10-27 04:32:44', '2019-10-27 15:45:22'),
 (41, 61, '5db580b5607b6_05.jpg', 'Lawi Mam', 8, 'yan@gmail.com', '09123456789', 'Yangon', 'www.greenhackersinstitute.com', 'http://www.facebook.com', 'hello worldLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'hellow worLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.ld', 'hello worldLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'hello wLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.orld', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'ads', '2019-10-18', '2019-10-27 04:35:11', '2019-10-27 15:34:13'),
 (42, 59, '5db5807168ae5_03.jpg', 'Yamanya Shwe Phyu Co.,Ltd', 19, 'thinhlaing.88900@gmail.com', '09449252583', 'Maltayo Village, Kyaikmayaw Tawnship ,Mawlamyine', 'https://facebook.com/profile.php?id=100011426835764', 'https://facebook.com/profile.php?id=100011426835764', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'ads', '2019-10-18', '2019-10-27 04:36:43', '2019-10-27 16:42:08'),
-(44, 57, '5db5804d7d212_01.jpg', 'MONSI GROUP', 19, 'monsi@gmail.com', '09771672511', 'No(L-11) ,Near Kyo Status Intersectionn, Myo Shaung Street, Myay Ni Gone Quarter, Mawlamyine', 'https://facebook.com/profile.php?id=100011426835764', 'https://facebook.com/profile.php?id=100011426835764', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'ads', '2019-10-25', '2019-10-27 04:38:26', '2019-10-27 15:49:24');
+(44, 57, '5db5804d7d212_01.jpg', 'MONSI GROUP', 19, 'monsi@gmail.com', '09771672511', 'No(L-11) ,Near Kyo Status Intersectionn, Myo Shaung Street, Myay Ni Gone Quarter, Mawlamyine', 'https://facebook.com/profile.php?id=100011426835764', 'https://facebook.com/profile.php?id=100011426835764', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'ads', '2019-10-25', '2019-10-27 04:38:26', '2019-10-27 15:49:24'),
+(59, 115, '5dbfe4f560549_199.jpg', 'Moon Company', 13, 'moon123@gmail.com', '09771672511', '4125  Fleming Street\r\n4125  Fleming Street', '4125  Fleming Street, 4125  Fleming Street', 'https://www.facebook.com/pop.starlay.1', 'fdsfdsf', 'sdfsf', 'sdfsd', 'sdfsf', 'dfsfs', 'ads', '2019-11-05', '2019-11-04 02:14:26', '2019-11-04 02:14:37');
 
 -- --------------------------------------------------------
 
@@ -402,92 +403,10 @@ INSERT INTO `galleries` (`id`, `photo`, `company_id`, `created_at`, `updated_at`
 (214, '5db52c433435d_IMG-1cc915f334d07dc30f44c5dd3531b726-V.jpg', 44, '2019-10-27 04:38:26', '2019-10-27 09:33:55'),
 (215, '5db52c5febb58_IMG-2e62f47b241909d4d951b967b3ba30d2-V.jpg', 44, '2019-10-27 04:38:26', '2019-10-27 09:34:23'),
 (216, '5db52c8060966_IMG-3bca1283dcfd89e9ca872ed1e0757570-V.jpg', 44, '2019-10-27 04:38:26', '2019-10-27 09:34:56'),
-(221, '5db80b94702f2_wallpapers (276).jpg', 46, '2019-10-29 01:33:13', '2019-10-29 03:21:16'),
-(222, '5db7f241120c7_1088.jpg', 46, '2019-10-29 01:33:13', '2019-10-29 01:33:13'),
-(223, '5db80ba1d1c70_ws_Vista_Blue_1280x800.jpg', 46, '2019-10-29 01:33:13', '2019-10-29 03:21:29'),
-(224, '5dba6de9301df_20.jpg', 45, '2019-10-30 22:45:21', '2019-10-30 22:45:21'),
-(225, '5dba6de936d3e_021.jpg', 45, '2019-10-30 22:45:21', '2019-10-30 22:45:21'),
-(226, '5dba6de93db9b_41.jpg', 45, '2019-10-30 22:45:21', '2019-10-30 22:45:21'),
-(227, '5dba6de9445f2_42.jpg', 45, '2019-10-30 22:45:21', '2019-10-30 22:45:21'),
-(228, '5dba791971d8d_17.jpg', 46, '2019-10-30 23:33:05', '2019-10-30 23:33:05'),
-(229, '5dba791975d0f_19.jpg', 46, '2019-10-30 23:33:05', '2019-10-30 23:33:05'),
-(230, '5dba79198210b_20.jpg', 46, '2019-10-30 23:33:05', '2019-10-30 23:33:05'),
-(231, '5dba791986151_021.jpg', 46, '2019-10-30 23:33:05', '2019-10-30 23:33:05'),
-(232, '5dba7a7375980_04.jpg', 47, '2019-10-30 23:38:51', '2019-10-30 23:38:51'),
-(233, '5dba7a7381736_005.jpg', 47, '2019-10-30 23:38:51', '2019-10-30 23:38:51'),
-(234, '5dba7a7385ae4_5.jpg', 47, '2019-10-30 23:38:51', '2019-10-30 23:38:51'),
-(235, '5dba819ec0925_04.jpg', 48, '2019-10-31 00:09:26', '2019-10-31 00:09:26'),
-(236, '5dba819ec4854_005.jpg', 48, '2019-10-31 00:09:26', '2019-10-31 00:09:26'),
-(237, '5dba819ec8ba7_5.jpg', 48, '2019-10-31 00:09:26', '2019-10-31 00:09:26'),
-(238, '5dba819eccba0_6.jpg', 48, '2019-10-31 00:09:26', '2019-10-31 00:09:26'),
-(239, '5dba828b632e8_3d_1171.jpg', 49, '2019-10-31 00:13:23', '2019-10-31 00:13:23'),
-(240, '5dba828b7740e_04.jpg', 49, '2019-10-31 00:13:23', '2019-10-31 00:13:23'),
-(241, '5dba828b7e2ee_005.jpg', 49, '2019-10-31 00:13:23', '2019-10-31 00:13:23'),
-(242, '5dba828b8e2b6_5.jpg', 49, '2019-10-31 00:13:23', '2019-10-31 00:13:23'),
-(243, '5dba828b9be2a_-103634343.jpg', 49, '2019-10-31 00:13:23', '2019-10-31 00:13:23'),
-(244, '5dba8432ec8ae_$458.jpg', 50, '2019-10-31 00:20:26', '2019-10-31 00:20:26'),
-(245, '5dba8432f0d70_(16).jpg', 50, '2019-10-31 00:20:26', '2019-10-31 00:20:26'),
-(246, '5dba843300ba0_(111).jpg', 50, '2019-10-31 00:20:27', '2019-10-31 00:20:27'),
-(247, '5dba84330ce94_0b7d1785d9b549dcd090c148728958df_full.jpg', 50, '2019-10-31 00:20:27', '2019-10-31 00:20:27'),
-(248, '5dba843310df3_1.jpg', 50, '2019-10-31 00:20:27', '2019-10-31 00:20:27'),
-(249, '5dba843322ae8_003.jpg', 50, '2019-10-31 00:20:27', '2019-10-31 00:20:27'),
-(250, '5dba87d4df104_04.jpg', 51, '2019-10-31 00:35:56', '2019-10-31 00:35:56'),
-(251, '5dba87d4eb0cb_005.jpg', 51, '2019-10-31 00:35:56', '2019-10-31 00:35:56'),
-(252, '5dba87d505db6_5.jpg', 51, '2019-10-31 00:35:57', '2019-10-31 00:35:57'),
-(253, '5dba87d50c84a_6.jpg', 51, '2019-10-31 00:35:57', '2019-10-31 00:35:57'),
-(272, '5dbaa62d1a839_09.jpg', 56, '2019-10-31 02:45:25', '2019-10-31 02:45:25'),
-(273, '5dbaa62d26470_9.jpg', 56, '2019-10-31 02:45:25', '2019-10-31 02:45:25'),
-(274, '5dbaa62d3ad37_9eba88e5-7911-461a-9e8c-c7545dadb207_5.jpg', 56, '2019-10-31 02:45:25', '2019-10-31 02:45:25'),
-(275, '5dbaa62d442f5_010.jpg', 56, '2019-10-31 02:45:25', '2019-10-31 02:45:25'),
-(276, '5dbaa830d59ac_$458.jpg', 57, '2019-10-31 02:54:00', '2019-10-31 02:54:00'),
-(277, '5dbaa830e1db4_(16).jpg', 57, '2019-10-31 02:54:00', '2019-10-31 02:54:00'),
-(278, '5dbaa830f0966_(111).jpg', 57, '2019-10-31 02:54:00', '2019-10-31 02:54:00'),
-(279, '5dbaa83108bb5_0b7d1785d9b549dcd090c148728958df_full.jpg', 57, '2019-10-31 02:54:01', '2019-10-31 02:54:01'),
-(280, '5dbaa8310f649_1.jpg', 57, '2019-10-31 02:54:01', '2019-10-31 02:54:01'),
-(281, '5dbaa9999b186_$458.jpg', 58, '2019-10-31 03:00:01', '2019-10-31 03:00:01'),
-(282, '5dbaa999ac442_(16).jpg', 58, '2019-10-31 03:00:01', '2019-10-31 03:00:01'),
-(283, '5dbaa999c7922_(111).jpg', 58, '2019-10-31 03:00:01', '2019-10-31 03:00:01'),
-(284, '5dbaa999dfcfe_0b7d1785d9b549dcd090c148728958df_full.jpg', 58, '2019-10-31 03:00:01', '2019-10-31 03:00:01'),
-(285, '5dbaf14c5f5fe_(16).jpg', 45, '2019-10-31 08:05:56', '2019-10-31 08:05:56'),
-(286, '5dbaf14c66042_(111).jpg', 45, '2019-10-31 08:05:56', '2019-10-31 08:05:56'),
-(287, '5dbaf14c6cee3_0b7d1785d9b549dcd090c148728958df_full.jpg', 45, '2019-10-31 08:05:56', '2019-10-31 08:05:56'),
-(288, '5dbaf14c73a18_1.jpg', 45, '2019-10-31 08:05:56', '2019-10-31 08:05:56'),
-(289, '5dbaf14c7a80c_003.jpg', 45, '2019-10-31 08:05:56', '2019-10-31 08:05:56'),
-(290, '5dbaf14c812c3_03.jpg', 45, '2019-10-31 08:05:56', '2019-10-31 08:05:56'),
-(291, '5dbaf1d4bad66_$458.jpg', 46, '2019-10-31 08:08:12', '2019-10-31 08:08:12'),
-(292, '5dbaf1d4c30a5_(16).jpg', 46, '2019-10-31 08:08:12', '2019-10-31 08:08:12'),
-(293, '5dbaf1d4cb273_(111).jpg', 46, '2019-10-31 08:08:12', '2019-10-31 08:08:12'),
-(294, '5dbaf1d4d1c60_0b7d1785d9b549dcd090c148728958df_full.jpg', 46, '2019-10-31 08:08:12', '2019-10-31 08:08:12'),
-(295, '5dbaf1d4d88b5_1.jpg', 46, '2019-10-31 08:08:12', '2019-10-31 08:08:12'),
-(296, '5dbaf1d4e4cc4_003.jpg', 46, '2019-10-31 08:08:12', '2019-10-31 08:08:12'),
-(297, '5dbaf259027ef_0b7d1785d9b549dcd090c148728958df_full.jpg', 47, '2019-10-31 08:10:25', '2019-10-31 08:10:25'),
-(298, '5dbaf25909210_1.jpg', 47, '2019-10-31 08:10:25', '2019-10-31 08:10:25'),
-(299, '5dbaf25915660_003.jpg', 47, '2019-10-31 08:10:25', '2019-10-31 08:10:25'),
-(300, '5dbaf2591c187_03.jpg', 47, '2019-10-31 08:10:25', '2019-10-31 08:10:25'),
-(301, '5dbaf34f16516_003.jpg', 48, '2019-10-31 08:14:31', '2019-10-31 08:14:31'),
-(302, '5dbaf34f24fed_03.jpg', 48, '2019-10-31 08:14:31', '2019-10-31 08:14:31'),
-(303, '5dbaf34f2bb42_3d_1049.jpg', 48, '2019-10-31 08:14:31', '2019-10-31 08:14:31'),
-(304, '5dbaf34f37c63_3d_1171.jpg', 48, '2019-10-31 08:14:31', '2019-10-31 08:14:31'),
-(305, '5dbaf4c0db182_(111).jpg', 49, '2019-10-31 08:20:40', '2019-10-31 08:20:40'),
-(306, '5dbaf4c0e7046_0b7d1785d9b549dcd090c148728958df_full.jpg', 49, '2019-10-31 08:20:40', '2019-10-31 08:20:40'),
-(307, '5dbaf4c0eb3c7_1.jpg', 49, '2019-10-31 08:20:40', '2019-10-31 08:20:40'),
-(308, '5dbaf4c10344b_003.jpg', 49, '2019-10-31 08:20:41', '2019-10-31 08:20:41'),
-(309, '5dbaf4c10a374_03.jpg', 49, '2019-10-31 08:20:41', '2019-10-31 08:20:41'),
-(310, '5dbaf7c639319_$458.jpg', 50, '2019-10-31 08:33:34', '2019-10-31 08:33:34'),
-(311, '5dbaf7c640073_(16).jpg', 50, '2019-10-31 08:33:34', '2019-10-31 08:33:34'),
-(312, '5dbaf7c64c129_(111).jpg', 50, '2019-10-31 08:33:34', '2019-10-31 08:33:34'),
-(313, '5dbaf7c658747_0b7d1785d9b549dcd090c148728958df_full.jpg', 50, '2019-10-31 08:33:34', '2019-10-31 08:33:34'),
-(314, '5dbaf8cae6bf9_(111).jpg', 51, '2019-10-31 08:37:54', '2019-10-31 08:37:54'),
-(315, '5dbaf8caeac31_0b7d1785d9b549dcd090c148728958df_full.jpg', 51, '2019-10-31 08:37:54', '2019-10-31 08:37:54'),
-(316, '5dbaf8caeef1f_1.jpg', 51, '2019-10-31 08:37:54', '2019-10-31 08:37:54'),
-(317, '5dbaf8caf2f3b_003.jpg', 51, '2019-10-31 08:37:54', '2019-10-31 08:37:54'),
-(318, '5dbaf8cb02fbd_03.jpg', 51, '2019-10-31 08:37:55', '2019-10-31 08:37:55'),
-(319, '5dbaf8cb071fb_3d_1049.jpg', 51, '2019-10-31 08:37:55', '2019-10-31 08:37:55'),
-(320, '5dbb8ca5d9a81_(16).jpg', 52, '2019-10-31 19:08:45', '2019-10-31 19:08:45'),
-(321, '5dbb8ca5e038e_(111).jpg', 52, '2019-10-31 19:08:45', '2019-10-31 19:08:45'),
-(322, '5dbb8ca5e47b2_0b7d1785d9b549dcd090c148728958df_full.jpg', 52, '2019-10-31 19:08:45', '2019-10-31 19:08:45'),
-(323, '5dbb8ca5e87a9_1.jpg', 52, '2019-10-31 19:08:45', '2019-10-31 19:08:45'),
-(324, '5dbb8ca5ecaec_003.jpg', 52, '2019-10-31 19:08:45', '2019-10-31 19:08:45');
+(384, '5dbfe4ea602d6_0017.jpg', 59, '2019-11-04 02:14:26', '2019-11-04 02:14:26'),
+(385, '5dbfe4ea646c4_17.jpg', 59, '2019-11-04 02:14:26', '2019-11-04 02:14:26'),
+(386, '5dbfe4ea6867e_19.jpg', 59, '2019-11-04 02:14:26', '2019-11-04 02:14:26'),
+(387, '5dbfe4ea6f624_20.jpg', 59, '2019-11-04 02:14:26', '2019-11-04 02:14:26');
 
 -- --------------------------------------------------------
 
@@ -588,7 +507,8 @@ INSERT INTO `members` (`id`, `name`, `phone`, `position`, `address`, `education`
 (100, 'နိုင်မင်းဖေသိန်း', '09xxxxxxxx', '', 'အမှတ်(၇)ရက်ကွက်၊ ဇာသပြင် အနောက်ဖက်ကမ်း၊ချောင်းဝပိုင်း\r\nဘားအံမြို့၊ ကရင်ပြည်နယ်', 'B.A(Geology)', 'hello', '5db4d5c5e6a8a_p44.png', NULL, NULL, NULL, 'special', '2019-10-27 03:24:53', '2019-10-27 03:24:53'),
 (101, 'နိုင်မျိုးတင့်လွင်', '09xxxxxxxx', '', 'အမှတ်(၅/၅၀)၊ ရာဇာဓိရာဇ်လမ်း ကော့ဘိန်းမြို့၊ကရင်ပြည်နယ်', 'တက္ကသိုလ်ဝင်တန်း', 'hello', '5db4d61f44bc1_p45.png', NULL, NULL, NULL, 'special', '2019-10-27 03:26:23', '2019-10-27 03:26:23'),
 (102, 'မင်းသိန်းထွန်းဦး (ခ) ကိုစကစ်', '09xxxxxxxx', 'Honad Sale Dealers, CEO M-26 Motorbike Co., Ltd, Founder & CEO Discovery Coaching, Training & Consulting, Motivational Speaker & Life Coach', 'အမှတ်(၁၅)၊ ဗိုလ်ချုပ်လမ်း၊ မြို့မ(၃) ရပ်ကွက်၊ လမိုင်းမြို့၊ ရေးမြို့နယ်', '(၈) တန်းအောင် 			Practitioner NLP & Coach, Professional Business Coach', 'hello', '5db4d67e4a7fa_p46.jpg', NULL, NULL, NULL, 'special', '2019-10-27 03:27:58', '2019-10-27 03:27:58'),
-(104, 'မင်းနေလင်းခိုင်', '09xxxxxxxx', 'FIRST STAR MOTEL(Manager)', 'မော်လြမိုင်စက်မှုဇုံ၊ ဘုရားကုန်းရွာ၊ မောလမြိုင်မြို့', 'A.G.I.T, Geography', 'hello', '5db4d7c42f860_p47.png', NULL, NULL, NULL, 'special', '2019-10-27 03:33:24', '2019-10-27 03:33:24');
+(104, 'မင်းနေလင်းခိုင်', '09xxxxxxxx', 'FIRST STAR MOTEL(Manager)', 'မော်လြမိုင်စက်မှုဇုံ၊ ဘုရားကုန်းရွာ၊ မောလမြိုင်မြို့', 'A.G.I.T, Geography', 'hello', '5db4d7c42f860_p47.png', NULL, NULL, NULL, 'special', '2019-10-27 03:33:24', '2019-10-27 03:33:24'),
+(115, 'Moon Lay', '4436519740', 'Developer', '4039  Marshall Street', 'B.Tech(IT)', 'sdfssdfs', '5dbfe4c26fbb6_41.jpg', 'https://web.facebook.com/linnmyat.htun.75', 'https://web.facebook.com/thazin.phyo.988', 'https://web.facebook.com/thazin.phyo.988', 'special', '2019-11-04 02:13:46', '2019-11-04 02:13:46');
 
 -- --------------------------------------------------------
 
@@ -697,7 +617,8 @@ INSERT INTO `users` (`id`, `email`, `email_verified_at`, `password`, `type`, `me
 (141, 'ddd@gmail.com', '2019-10-27 00:22:48', '$2y$10$1S3KcniW3TDAoTsiDC65y.M3m6/1c77F8GxCiGONfEBVunMwiz/Ne', 'member', 58, NULL, '2019-10-27 00:22:48', '2019-10-27 00:22:48'),
 (142, 'ccc@gmail.com', '2019-10-27 00:24:16', '$2y$10$1S3KcniW3TDAoTsiDC65y.M3m6/1c77F8GxCiGONfEBVunMwiz/Ne', 'member', 59, NULL, '2019-10-27 00:24:16', '2019-10-27 00:24:16'),
 (143, 'eee@gmail.com', '2019-10-27 00:24:16', '$2y$10$1S3KcniW3TDAoTsiDC65y.M3m6/1c77F8GxCiGONfEBVunMwiz/Ne', 'member', 60, NULL, '2019-10-27 00:24:16', '2019-10-27 00:24:16'),
-(144, 'fff@gmail.com', '2019-10-27 00:25:05', '$2y$10$1S3KcniW3TDAoTsiDC65y.M3m6/1c77F8GxCiGONfEBVunMwiz/Ne', 'member', 61, NULL, '2019-10-27 00:25:05', '2019-10-27 00:25:05');
+(144, 'fff@gmail.com', '2019-10-27 00:25:05', '$2y$10$1S3KcniW3TDAoTsiDC65y.M3m6/1c77F8GxCiGONfEBVunMwiz/Ne', 'member', 61, NULL, '2019-10-27 00:25:05', '2019-10-27 00:25:05'),
+(155, 'moon@gmail.com', NULL, '$2y$10$O7Jo1KeBwdKMx/HcvrCiDem/vUKJyKrkdPdvPDwD/2Sd5SdSR7vHS', 'member', 115, NULL, '2019-11-04 02:13:46', '2019-11-04 02:13:46');
 
 -- --------------------------------------------------------
 
@@ -750,7 +671,7 @@ CREATE TABLE `web_site_infos` (
 --
 
 INSERT INTO `web_site_infos` (`id`, `website_name`, `about`, `history`, `vision`, `mission`, `sign_photo`, `sign_name`, `sign_position`, `email`, `phone`, `address`, `created_at`, `updated_at`) VALUES
-(1, 'Mon Entreprenures Association', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Placeat quos vitae vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, laudantium reprehenderit provident voluptates minus incidunt nobis iure odit nihil atque totam impedit quidem accusantium aspernatur ipsum at! Quaerat, similique face', 'ipsum dolor sit amet, consectetur adipisicing elit. Autem distinctio dolores tenetur incidunt, id ad eius accusantium labore nam a quibusdam velit harum sed aliquam cupiditate inventore sint architecto perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam officiis cum voluptates modi ex quo ipsa quis, non, sed, deleniti maiores quaerat earum laborum. Placeat quos vitae vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, laudantium reprehenderit provident voluptates minus incidunt nobis iure odit nihil atque totam impedit quidem accusantium aspernatur ipsum at! Quaerat, similique face', '<ul><li><li>အလားအလာရှိသည့် စီးပွားရေးလုပ်ကွက်များ ဖော်ထုတ်နိုင်ရန်</li><li>ဒေသထွက်ထုတ်ကုန်များ၏ ဈေးကွက်ဖော်ဆောင်နိုင်ရန်</li><li>မွန်လုပ်ငန်းရှင်အချင်းချင်း စီးပွားရေးကွန်ရက်အားကောင်းလာရန်</li><li>မွန်လုပ်ငန်းရှင်များကို စီးပွားရေးနှင့် သက်ဆိုင်သည့် စွမ်းဆောင်ရည်များ မြှင့်တင်ပေးရန်</li><li>မွန် ဒေသအတွင်း ဖော်ဆောင်နိုင်မည့် လုပ်ငန်းကဏ္ဍများ ၏ မူဝါဒပန်းတိုင်များ၊ လုပ်ငန်းစဉ်များ၊ အကောင်ထည်ဖော်ရမည့် အပိုင်းများ ချမှတ်နိုင်ရန်။</li></li></ul>', '<ul><li>နိုင်ငံတော်အဆင့်/ပြည်နယ်အဆင့် မှ ချမှတ်အကောင်ထည်ဖော် လုပ်ဆောင်နေသည့် စီးပွားရေး ကဏ္ဍများ သိရှိနားလည်နိုင်ခြင်း</li><li>နိုင်ငံတော်အဆင့်/ပြည်နယ်အဆင့် စီးပွားရေးဆိုင်ရာ ဥပဒေ၊ နည်းဥပဒေများ သိရှိနားလည်လိုက်နာနိုင်ခြင်း</li><li>စီးပွားရေးဆိုင်ရာ အကြံနည်းလမ်းကောင်းများ၊ အားသာချက် အားနည်းချက်များ၊ လိုက်နာဆောင်ရွက်ရမည့် စည်းမျဉ်း စည်းကမ်းများနှင့် ဓလေ့ထုံးတမ်းအစဉ်အလာများကို သိရှိနားလည်ဆောင်ရွက်နိုင်ခြင်း</li><li>မွန် ဒေသရှိ မွန်လုပ်ငန်းရှင်များ အချင်းချင်း စီးပွားရေးလုပ်ငန်းများ ချိတ်ဆက် ပူးပေါင်းလုပ်ဆောင်မှု အားကောင်းလာနိုင်ခြင်း<br></li></ul>', '5da9d37b60751_welcom_sign.png', 'DR. AUNG WIN HTUT', 'PH.D (ELECTRICAL POWER) (MPEI)', 'meamon.mlm@gmail.com', '09 4550 69192', 'No.(64/4),ShinSawPu Road, ZayeKyoYet, Molamyne.', NULL, '2019-10-31 02:26:03');
+(1, 'Mon Entreprenures Association', 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Placeat quos vitae vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, laudantium reprehenderit provident voluptates minus incidunt nobis iure odit nihil atque totam impedit quidem accusantium aspernatur ipsum at! Quaerat, similique face', 'ipsum dolor sit amet, consectetur adipisicing elit. Autem distinctio dolores tenetur incidunt, id ad eius accusantium labore nam a quibusdam velit harum sed aliquam cupiditate inventore sint architecto perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam officiis cum voluptates modi ex quo ipsa quis, non, sed, deleniti maiores quaerat earum laborum. Placeat quos vitae vel, voluptatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, laudantium reprehenderit provident voluptates minus incidunt nobis iure odit nihil atque totam impedit quidem accusantium aspernatur ipsum at! Quaerat, similique face', '<ul><li><li>အလားအလာရှိသည့် စီးပွားရေးလုပ်ကွက်များ ဖော်ထုတ်နိုင်ရန်</li><li>ဒေသထွက်ထုတ်ကုန်များ၏ ဈေးကွက်ဖော်ဆောင်နိုင်ရန်</li><li>မွန်လုပ်ငန်းရှင်အချင်းချင်း စီးပွားရေးကွန်ရက်အားကောင်းလာရန်</li><li>မွန်လုပ်ငန်းရှင်များကို စီးပွားရေးနှင့် သက်ဆိုင်သည့် စွမ်းဆောင်ရည်များ မြှင့်တင်ပေးရန်</li><li>မွန် ဒေသအတွင်း ဖော်ဆောင်နိုင်မည့် လုပ်ငန်းကဏ္ဍများ ၏ မူဝါဒပန်းတိုင်များ၊ လုပ်ငန်းစဉ်များ၊ အကောင်ထည်ဖော်ရမည့် အပိုင်းများ ချမှတ်နိုင်ရန်။</li></li></ul>', '<ul><li>နိုင်ငံတော်အဆင့်/ပြည်နယ်အဆင့် မှ ချမှတ်အကောင်ထည်ဖော် လုပ်ဆောင်နေသည့် စီးပွားရေး ကဏ္ဍများ သိရှိနားလည်နိုင်ခြင်း</li><li>နိုင်ငံတော်အဆင့်/ပြည်နယ်အဆင့် စီးပွားရေးဆိုင်ရာ ဥပဒေ၊ နည်းဥပဒေများ သိရှိနားလည်လိုက်နာနိုင်ခြင်း</li><li>စီးပွားရေးဆိုင်ရာ အကြံနည်းလမ်းကောင်းများ၊ အားသာချက် အားနည်းချက်များ၊ လိုက်နာဆောင်ရွက်ရမည့် စည်းမျဉ်း စည်းကမ်းများနှင့် ဓလေ့ထုံးတမ်းအစဉ်အလာများကို သိရှိနားလည်ဆောင်ရွက်နိုင်ခြင်း</li><li>မွန် ဒေသရှိ မွန်လုပ်ငန်းရှင်များ အချင်းချင်း စီးပွားရေးလုပ်ငန်းများ ချိတ်ဆက် ပူးပေါင်းလုပ်ဆောင်မှု အားကောင်းလာနိုင်ခြင်း<br></li></ul>', '5da9d37b60751_welcom_sign.png', 'DR. AUNG WIN HTUT', 'PH.D (ELECTRICAL POWER) (MPEI)', 'meamon.mlm@gmail.com', '09 4550 69192', 'No.(64/4),ShinSawPu Road, ZayeKyoYet, Mawlamyine.', NULL, '2019-11-03 22:04:09');
 
 --
 -- Indexes for dumped tables
@@ -879,13 +800,13 @@ ALTER TABLE `admin_galleries`
 -- AUTO_INCREMENT for table `ads`
 --
 ALTER TABLE `ads`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `ads_webpages`
 --
 ALTER TABLE `ads_webpages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
 
 --
 -- AUTO_INCREMENT for table `banners`
@@ -897,13 +818,13 @@ ALTER TABLE `banners`
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `companies`
 --
 ALTER TABLE `companies`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -927,7 +848,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=325;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=392;
 
 --
 -- AUTO_INCREMENT for table `main_categories`
@@ -939,7 +860,7 @@ ALTER TABLE `main_categories`
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -951,13 +872,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `sub_categories`
 --
 ALTER TABLE `sub_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=156;
 
 --
 -- AUTO_INCREMENT for table `webpages`

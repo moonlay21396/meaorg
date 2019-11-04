@@ -184,7 +184,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary pull-right" id="btn_submit">Create</button>
+                            <button type="submit" class="btn btn-primary pull-right">Create</button>
                             <div class="clearfix"></div>
                         </form>
                     </div>
@@ -285,7 +285,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary pull-right" id="btn_submit">Update</button>
+                            <button type="submit" class="btn btn-primary pull-right">Update</button>
                             <div class="clearfix"></div>
                         </form>
                     </div>
@@ -365,7 +365,7 @@
                     processData: false,
                     contentType: false,
                     success: function(data){
-                        alert('itwork');
+                        // alert('itwork');
                         console.log(data);
                         $('#modalBox').modal('hide');
                         toastr.success('Create member account successful');
@@ -474,3 +474,5 @@
         });
     </script>
 @endsection
+
+ {{-- id="btn_submit" --}}
